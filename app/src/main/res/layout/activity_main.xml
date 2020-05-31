@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:id="@+id/header"
+        app:title="NextDoor"
+        app:titleMarginStart="145dp"
+        android:layout_alignParentTop="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgview2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_home_black_24dp"
+            android:contentDescription="@string/todo"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgview1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_person_black_24dp"
+            android:contentDescription="@string/todo"
+             />
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_above="@id/footer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lay1"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/background1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:layout_marginTop="3dp"
+                android:text="Alta Hill"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                android:layout_marginTop="3dp"
+                android:text="+ 12 NeighbourHood"
+                android:id="@+id/tv2"/>
+        </LinearLayout>
+
+
+        //second layout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/background1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imga"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/men1" />
+            <TextView
+                android:id="@+id/tva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/imga"
+                android:textStyle="bold"
+                android:text="@string/anshuman_roy_alta_hill"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tva"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="@string/my_roof_is_leaking_since_last_week_i_any_one_is_willing_to_sell_his_rooffer_i_will_pa_pay_the_reqiured_price_of_it_text_back_me_for_the_same"
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvb"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvb"
+                android:id="@+id/tvc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text=" 2 replies 21m ago"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvc"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/smile"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/thanked"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/comment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="I can help"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/smi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="1"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/messiing"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="1"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+//third
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="@drawable/background1"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/imgx"
+                android:src="@drawable/men2"/>
+            <TextView
+                android:id="@+id/tvx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/imgx"
+                android:text="Alfred Hilta Morvis "
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvx"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="The villa,land are vastu complaint. Bank loan approved from hdfc home loans, icici bank, indiabulls. This may cost more but i can make it available"
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvy"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/roof2"
+                android:layout_below="@+id/tvy"
+                android:scaleType="fitXY"
+                android:id="@+id/imgroof"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgroof"
+                android:id="@+id/tvz"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text=" 2 replies 21m ago"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvz"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/smile"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:text="@string/thanked"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/comment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="I can help"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/smi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="1"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/messiing"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="1"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+//4th
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="@drawable/background1"
+            android:padding="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/img5"
+            android:src="@drawable/girl"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/img5"
+            android:text="Meery Angel Dnsney"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="@string/my_roof_is_leaking_since_last_week_i_any_one_is_willing_to_sell_his_rooffer_i_will_pa_pay_the_reqiured_price_of_it_text_back_me_for_the_same"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv6"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/tour1"
+            android:layout_below="@+id/tv6"
+            android:scaleType="fitXY"
+            android:id="@+id/imgroof1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgroof1"
+            android:id="@+id/tv7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" 2 replies 21m ago"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv7"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/smile"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="@string/thanked"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/comment"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="I can help"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/smi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="1"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/messiing"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:text="1"
+                android:textSize="20sp"/>
+
+        </LinearLayout></RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#000000"
+        android:background="#fdfdfd"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="selected"
+        />
+
+
+
+
+
+</RelativeLayout>

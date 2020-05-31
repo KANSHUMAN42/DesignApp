@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:id="@+id/home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item  android:id="@+id/notification"
+        android:title="Notification"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+    <item  android:id="@+id/Addpost"
+        android:title="Addpost"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_black_24dp"
+        />
+    <item  android:id="@+id/Message"
+        android:title="Message"
+        android:enabled="true"
+        android:icon="@drawable/ic_mode_comment_black_24dp"/>
+    <item  android:id="@+id/all_item"
+        android:title="item"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_black_24dp"
+        />
+
+</menu>
